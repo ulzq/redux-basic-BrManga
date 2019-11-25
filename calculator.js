@@ -11,6 +11,8 @@ let reducer = (state = 1, { type, value = 1 }) => {
       return state / value;
     case "MUL":
       return state * value;
+    case "SET":
+      return value;
     default:
       return state;
   }
@@ -27,7 +29,7 @@ store.dispatch({ type: "ADD" });
 store.dispatch({ type: "ADD", value: 2 });
 store.dispatch({ type: "DIV", value: 2 });
 store.dispatch({ type: "MUL", value: 3 });
-store.dispatch({ type: "MUL", value: 3 });
+store.dispatch({ type: "SET", value: 999 });
 ["ADD", "MUL"].map(action => {
   store.dispatch({ type: action, value: 2 });
 });
