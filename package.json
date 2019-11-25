@@ -10,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "redux": "^4.0.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulzq/redux-basic-BrManga.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ulzq/redux-basic-BrManga/issues"
+  },
+  "homepage": "https://github.com/ulzq/redux-basic-BrManga#readme"
 }
